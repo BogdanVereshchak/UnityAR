@@ -14,6 +14,12 @@
 
 **/BackUpThisFolder_ButDontShipItWithYourGame/
 **/*BackUpThisFolder_ButDontShipItWithYourGame/
+**/BurstDebugInformation/
+**/*BurstDebugInformation/
+*BurstDebugInformation_DoNotShip/
+
+**/DoNotShip/
+**/*DoNotShip/
 **/il2cppOutput/
 **/*.apk
 **/*.aab
