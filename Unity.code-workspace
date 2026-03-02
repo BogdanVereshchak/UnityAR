@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "AR_Lab02_UnityBasics"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.asset": "yaml",
+			"*.meta": "yaml",
+			"*.prefab": "yaml",
+			"*.unity": "yaml"
+		},
+		"dotnet.defaultSolution": "AR_Lab02_UnityBasics.slnx"
+	}
+}
