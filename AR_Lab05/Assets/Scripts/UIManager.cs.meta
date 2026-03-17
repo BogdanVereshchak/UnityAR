@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0295a0aa9e325ee42915ad7284fc6d93
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cubePrefab: {instanceID: 0}
+  - spherePrefab: {instanceID: 0}
+  - cylinderPrefab: {instanceID: 0}
+  - statusText: {instanceID: 0}
+  - modeButtonText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
