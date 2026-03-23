@@ -3,6 +3,7 @@ using TMPro;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 public class ScreenLog : MonoBehaviour
 {
     [Header("UI")]
@@ -75,7 +76,7 @@ public class ScreenLog : MonoBehaviour
                 color = "#FFFFFF"; // білий
                 break;
         }
-        string timestamp = showTimestamp ? $"[{Time.time:F1}s] " : "";
+        string timestamp = showTimestamp ? $"[{DateTime.Now:mm:ss.fff}] " : "";
         string formattedLog = $"<color={color}>{timestamp}{logString}</color>";
 
         logQueue.Enqueue(formattedLog);

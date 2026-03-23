@@ -419,6 +419,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ARDiagnostics
   planeManager: {fileID: 590317910}
   updateInterval: 2
+  autoSendError: 0
+  autoSendWarning: 0
+  testInterval: 5
 --- !u!4 &170745001
 Transform:
   m_ObjectHideFlags: 0

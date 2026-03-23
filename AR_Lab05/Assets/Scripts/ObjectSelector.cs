@@ -35,6 +35,28 @@ public class ObjectSelector : MonoBehaviour
         selectedObject.GetComponent<MeshFilter>().mesh = newMesh;
         MeshCollider collider = selectedObject.GetComponent<MeshCollider>();
         if (collider != null) collider.sharedMesh = newMesh;
+        if (selectedRenderer != null)
+        {
+            selectedRenderer.material = newMaterial;
+            originalColor = newMaterial.color; // Оновлюємо базовий колір
+            selectedRenderer.material.color = highlightColor; // Повертаємо хайлайт, бо об'єкт все ще виділений
+        }
+    }
+
+    public void ChangeColorToRed() { ApplyNewColor(Color.red); }
+    public void ChangeColorToGreen() { ApplyNewColor(Color.green); }
+    public void ChangeColorToBlue() { ApplyNewColor(Color.blue); }
+    public void ApplyNewColor(Color newColor)
+    {
+        if (selectedRenderer != null)
+        {
+            originalColor = newColor; 
+            
+            // Якщо хочеш, щоб під час виділення колір одразу змінився на вибраний (ігноруючи highlightColor) - розкоментуй наступний рядок:
+            selectedRenderer.material.color = originalColor;
+            
+            Debug.Log($"Color changed to {newColor}");
+        }
     }
     private void TrySelectObject(Vector2 screenPosition)
     {

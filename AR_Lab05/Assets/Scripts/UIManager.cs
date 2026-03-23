@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject cubePrefab;
     [SerializeField] private GameObject spherePrefab;
     [SerializeField] private GameObject cylinderPrefab;
+    [SerializeField] private GameObject capsulePrefab;
+    [SerializeField] private GameObject quadPrefab;
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI statusText;
     [SerializeField] private TextMeshProUGUI modeButtonText;
@@ -35,8 +37,19 @@ public class UIManager : MonoBehaviour
         SetSelection(cylinderPrefab);
         UpdateStatus("Selected: Cylinder");
     }
+    public void SelectCapsule()
+    {
+        SetSelection(capsulePrefab);
+        UpdateStatus("Selected: Capsule/Cone");
+    }
+    public void SelectQuad()
+    {
+        SetSelection(quadPrefab);
+        UpdateStatus("Selected: Quad");
+    }
     private void SetSelection(GameObject prefab)
     {
+        if (prefab == null) return;
         selectedPrefab = prefab;
         selectedMesh = prefab.GetComponent<MeshFilter>().sharedMesh;
         selectedMaterial = prefab.GetComponent<MeshRenderer>().sharedMaterial;
