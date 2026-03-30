@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
@@ -189,5 +190,20 @@ public class ImageTracker : MonoBehaviour
             }
         }
         return 0;
+    }
+    public void TakeScreenshot()
+    {
+        // Створюємо унікальне ім'я файлу на основі дати та часу
+        string timestamp = System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+        string fileName = $"AR_Screenshot_{timestamp}.png";
+        
+        // Формуємо повний шлях для збереження
+        string filePath = Path.Combine(Application.persistentDataPath, fileName);
+
+        // Робимо знімок екрану
+        ScreenCapture.CaptureScreenshot(filePath);
+
+        // Виводимо шлях у консоль, як вимагається у завданні
+        Debug.Log($"[SCREENSHOT] Збережено за шляхом: {filePath}");
     }
 }

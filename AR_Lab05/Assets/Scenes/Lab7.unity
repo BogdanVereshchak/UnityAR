@@ -273,7 +273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &66838699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,7 +748,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709388657}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76dae5bfc537b0042a00093e05c59851, type: 3}
   m_Name: 
@@ -801,7 +801,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709388657}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4296ad571ea4eee49abd90e1806e5e41, type: 3}
   m_Name: 
@@ -1054,7 +1054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8384bc7c84f42b41a6b21e9ad142835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectPlacementManager2
-  placementPrefab: {fileID: 4473433531820407446, guid: 1ae77f35e6a8fe64c870127e598739e5, type: 3}
+  placementPrefab: {fileID: 4473433531820407446, guid: a2b854579296bcb49a8b0fd8ac2b428c, type: 3}
   raycastManager: {fileID: 1544575013}
   maxObjects: 20
 --- !u!4 &1103822649
@@ -1301,6 +1301,7 @@ GameObject:
   - component: {fileID: 1544575015}
   - component: {fileID: 1544575014}
   - component: {fileID: 1544575013}
+  - component: {fileID: 1544575017}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -1374,6 +1375,25 @@ Transform:
   - {fileID: 437005067}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1544575017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544575012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a025b51106444e18fb408fde19ac53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.AREnvironmentProbeManager
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AutomaticPlacement: 1
+  m_EnvironmentTextureFilterMode: 2
+  m_EnvironmentTextureHDR: 1
+  m_DebugPrefab: {fileID: 0}
 --- !u!1 &1558322002
 GameObject:
   m_ObjectHideFlags: 0

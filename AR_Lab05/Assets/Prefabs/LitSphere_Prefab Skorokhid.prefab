@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: efdb65a7f5256ed46b7f98e0ab3a5951, type: 2}
+  - {fileID: 2100000, guid: 5fb63a2198477c744be3a55fb7cd3022, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4176787766348703636}
   m_Layer: 0
-  m_Name: LitSphere_Prefab
+  m_Name: LitSphere_Prefab Skorokhid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
