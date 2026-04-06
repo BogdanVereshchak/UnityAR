@@ -8,12 +8,21 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Lab5.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Lab6.unity
     guid: 96417eb4b718c4b4eaa86e8f6902615d
   - enabled: 0
     path: Assets/Scenes/Lab7.unity
     guid: 7c665ac586bb0f64c91f2f4db6fe8abe
+  - enabled: 0
+    path: Assets/Scenes/Lab5 Kruk.unity
+    guid: 693f678756ce0a04181f6d76eeb642a9
+  - enabled: 0
+    path: Assets/Scenes/Lab6 Kruk.unity
+    guid: cd7b4b22367241f4285854ec44c8c10e
+  - enabled: 1
+    path: Assets/Scenes/Lab7 Kruk.unity
+    guid: 7211ccb2f137c884d81968846269ff7d
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f96450e70d69aa84989a5d2b3fbdc174, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

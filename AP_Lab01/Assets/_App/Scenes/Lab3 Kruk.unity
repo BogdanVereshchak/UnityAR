@@ -1506,6 +1506,7 @@ GameObject:
   - component: {fileID: 1190327434}
   - component: {fileID: 1190327433}
   - component: {fileID: 1190327435}
+  - component: {fileID: 1190327436}
   m_Layer: 0
   m_Name: PlacementManager
   m_TagString: Untagged
@@ -1520,7 +1521,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190327432}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6638c59ffe2343f45bba1c5f7db908a4, type: 3}
   m_Name: 
@@ -1646,6 +1647,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1190327436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190327432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7713640123883842b716925a7bfca8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectPlacementManager5
+  placementPrefab: {fileID: 2033280303598517480, guid: c087450d7b5b2b54daab7acd8fbb779e, type: 3}
+  raycastManager: {fileID: 992447155}
+  planeManager: {fileID: 992447156}
+  uiIndicator: {fileID: 0}
+  maxObjects: 10
 --- !u!1 &1338099226
 GameObject:
   m_ObjectHideFlags: 0
